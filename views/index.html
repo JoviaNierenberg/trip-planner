@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <ol>
+      {% for hotel in all_hotels %}
+        <li>{{ hotel.name }}</li>
+      {% endfor %}
+    </ol>
+    <ol>
+      {% for thing in all_things_to_do %}
+        <li>{{ thing.name }}</li>
+      {% endfor %}
+    </ol>
+    <ol>
+      {% for restaurant in all_restaurants %}
+        <li>{{ restaurant.name }}</li>
+      {% endfor %}
+    </ol>
+{% endblock %}
